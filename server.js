@@ -50,7 +50,7 @@ app.get("/customerInfo", (req, res) => {
 
 // Define a route
 app.get("/", (req, res) => {
-  res.send("Hello, World! Welcome to my Node.js app!");
+  res.send("Hello, World! Welcome to my Node.js appsss!");
 });
 
 // Start the server
