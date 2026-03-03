@@ -40,7 +40,7 @@ app.get("/customerInfo", (req, res) => {
   const data = req;
   sql.connect(config, function () {
     var request = new sql.Request();
-    request.query("select * from demo", function (err, recordset) {
+    request.query("SELECT * FROM dbo.Users", function (err, recordset) {
       if (err) console.log(err);
       // res.end(JSON.stringify(recordset)); // Result in JSON format
       res.send(recordset);
@@ -50,7 +50,7 @@ app.get("/customerInfo", (req, res) => {
 
 // Define a route
 app.get("/", (req, res) => {
-  res.send("Hello, World! Welcome to my Node.js apps!");
+  res.send("Hello, World! Welcome to my Node.js appsssss!");
 });
 
 // Start the server
